@@ -12,8 +12,9 @@ commands = [
 filepath = "/home/kenjoel/Downloads/14084_THK_NE9000-8_PE_01.txt"
 
 
-def read_file(file : str) -> list:
-    op = open(file,  )
+def read_file(file_url : str) -> list:
+    op = open(str(filepath), 'r')
+    print(op.readlines())
 
 
 #
@@ -34,5 +35,5 @@ def read_file(file : str) -> list:
 
 
 if __name__ == "__main__":
-    pass
+    read_file(filepath)
     # config_check(filepath)
